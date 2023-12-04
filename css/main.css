@@ -121,7 +121,7 @@ input, textarea {
 
 #hero {
    background: url(../images/hero-main.jpg) no-repeat;
-   height: 200px;
+   height: 195px;
 }
 
 .book-now {
@@ -500,13 +500,13 @@ input, textarea {
    right: 10px;
 }
 
-#massage-heading-box, #hand-heading-box {
+#massage-heading-box, #hand-heading-box, #scrubs-heading-box {
    align-self: end;
 }
 
 #massage_hero_img {
    background: url(../images/massage_hero.jpg) no-repeat;
-   background-size: cover;
+   background-size:inherit;
    height: 195px;
 }
 
@@ -516,14 +516,6 @@ input, textarea {
    margin-bottom: 20px;
 }
 
-#price-price p {
-   display: inline;
-}
-
-/* .massage-price-text {
-   border-left: 2px solid #9a2018;
-   padding-left: 9px;
-} */
 
 .price {
    padding: 10px 0;
@@ -538,7 +530,7 @@ input, textarea {
    display: inline;
 }
 
-.price-text-price .price-price{
+.price-price{
    font-size: 28px;
    color:#871C15;
    text-align: right;
@@ -548,6 +540,7 @@ input, textarea {
    font-size: 14px;
    color: #5C5C5C;
    padding-right: 10px;
+   display: inline;
 }
 
 .price-text {
@@ -559,8 +552,55 @@ input, textarea {
 
 #hand_hero_img {
    background: url(../images/hand-foot_hero.jpg) no-repeat;
-   background-size: cover;
+   background-size: inherit;
    height: 195px;
 }
 
+
+#scrubs_hero_img {
+   background: url(../images/scrubs_hero.jpg) no-repeat;
+   background-size: inherit;
+   height: 195px;
+}
+
+
+
+
+.card {
+   margin-top: 30px;
+   background-color: #fff;
+   padding-top: 12px;
+   padding-bottom: 8px;
+   
+
+}
+
+.card_text_p {
+   display: inline;
+   
+}
+
+.card_text_p{
+   display: flex;
+   align-items: center;
+   border-left: 2px solid #9a2018;
+   padding-left: 9px;
+
+}
+
+.card_text_p-2 {
+   text-align: right;
+   font-size: 28px;
+   color:#871C15;
+}
+
+.card_text_p, .card_text_p-2 {
+   margin: 8px;
+}
+
+
+
+.card-text {
+   padding: 0;
+}
 
