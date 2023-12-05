@@ -482,17 +482,19 @@ input, textarea {
    background-repeat: no-repeat;
    background-size: 25px;
    background-image: url(../images/arrow-circle-right-fill.svg);
-   
 }
 
-.teleport_item .text {
+.text {
    color: #333;
    display: inline-block;
    text-decoration: underline;
-   border-left: 2px solid #9a2018;
+   border-left: 2px solid #CF6666;
    padding-left: 11px;
    margin-left: 15px;
-   
+}
+
+.waxing_item .text {
+   text-decoration: none;
 }
 
 .teleport_item i {
@@ -500,7 +502,7 @@ input, textarea {
    right: 10px;
 }
 
-#massage-heading-box, #hand-heading-box, #scrubs-heading-box {
+#massage-heading-box, #hand-heading-box, #scrubs-heading-box, #waxing-heading-box {
    align-self: end;
 }
 
@@ -592,6 +594,7 @@ input, textarea {
    text-align: right;
    font-size: 28px;
    color:#871C15;
+   text-decoration: underline;
 }
 
 .card_text_p, .card_text_p-2 {
@@ -604,3 +607,21 @@ input, textarea {
    padding: 0;
 }
 
+
+#waxing_hero_img {
+   background-image: url(../images/waxing_hero.jpg);
+   height: 190px;;
+}
+
+.waxing-heading-box {
+   align-self: end;
+}
+
+.waxing_item {
+   display: flex;
+   height: 52px;
+   background-color: white;
+   align-items: center;
+   margin-bottom: 11px;
+   margin-top: 5px;
+}
