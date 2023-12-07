@@ -121,6 +121,7 @@ input, textarea {
 
 #hero {
    background: url(../images/hero-main.jpg) no-repeat;
+   background-size: inherit;
    height: 195px;
 }
 
@@ -304,7 +305,7 @@ input, textarea {
    padding-bottom: 60px;
 }
 
-#about-us-text p {
+#about-us-text p, .other-cont p, #algonquin-summary p, #contact-hero-address p {
    font-size: 14px;
    margin-bottom: 20px;
    line-height: 22px;
@@ -375,12 +376,6 @@ input, textarea {
 #contact-hero-text {
    margin-top: 15px;
    margin-bottom: 25px;
-}
-
-#contact-hero-address p {
-   margin-bottom: 20px;
-   font-size: 14px;
-   line-height: 22px;
 }
 
 #contact-hero-address {
@@ -465,7 +460,8 @@ input, textarea {
 
 #spa_hero{
    background-image: url(../images/spa_main_hero.jpg);
-   background-size: cover;
+   background-repeat: no-repeat;
+   background-size: inherit;
    height: 195px;
 }
 
@@ -508,7 +504,7 @@ input, textarea {
 
 #massage_hero_img {
    background: url(../images/massage_hero.jpg) no-repeat;
-   background-size:inherit;
+   background-size: inherit;
    height: 195px;
 }
 
@@ -610,10 +606,12 @@ input, textarea {
 
 #waxing_hero_img {
    background-image: url(../images/waxing_hero.jpg);
+   background-repeat: no-repeat;
+   background-size: inherit;
    height: 190px;;
 }
 
-.waxing-heading-box {
+#waxing-heading-box {
    align-self: end;
 }
 
@@ -624,4 +622,42 @@ input, textarea {
    align-items: center;
    margin-bottom: 11px;
    margin-top: 5px;
+}
+
+#algonquin_hero_img {
+   background-image: url(../images/algonquin_hero.jpg);
+   height: 190px;
+   background-repeat: no-repeat;
+   background-size: inherit;
+}
+
+#algonquin-summary p:nth-child(2) {
+   margin-bottom: 25px;
+}
+
+#algonquin-heading-box {
+   align-self: end;
+}
+
+.other_heading {
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 20px;
+}
+
+#other_hero_img {
+   background-image: url(../images/other_hero.jpg);
+   height: 195px;
+   background-size: inherit;
+   background-repeat: no-repeat;
+}
+
+#other-heading-box {
+   align-self: end;
+}
+
+
+
+.other-cont p {
+   margin-bottom: 5px;
 }
