@@ -55,6 +55,8 @@ input, textarea {
 }
 
 
+
+
 /* 2. ---Main Nav--- */
 
  #main-nav label img {
@@ -146,10 +148,6 @@ input, textarea {
    height: 67px;
 }
 
-#hero-heading-box {
-   align-self: end;
-}
-
 .hero-img-h2, .hero-img-h3 {
    background: rgb(255, 255, 255);
    padding: 10px 15px;
@@ -199,15 +197,9 @@ input, textarea {
    padding-bottom: 30px;
 }
 
-
-
-
-
-
-
-
-
-
+.heading-box {
+   align-self: end;
+}
 
 /* 5. ---Why Choose Us--- */
 
@@ -237,10 +229,6 @@ input, textarea {
 #why-choose-us-hero-con {
   background: url(../images/why-choose-us-hero.jpg) no-repeat;
   height: 195px;
-}
-
-#why-choose-us-heading-box {
-   align-self: end;
 }
 
 .why-choose-us-image {
@@ -295,10 +283,6 @@ input, textarea {
 #about-hero-con {
    background: url(../images/about-us-hero.jpg) no-repeat;
    height: 195px;
-}
-
-#about-hero-heading-box {
-   align-self: end;
 }
 
 #about-us-text {
@@ -369,10 +353,6 @@ input, textarea {
    height: 195px;
    background-repeat: no-repeat;
    background-size: inherit;
-}
-
-#contact-hero-heading-box {
-   align-self: end;
 }
 
 #contact-hero-text {
@@ -460,12 +440,7 @@ input, textarea {
 
 /* spa activities */
 
-#spa_hero{
-   background-image: url(../images/spa_main_hero.jpg);
-   background-repeat: no-repeat;
-   background-size: inherit;
-   height: 195px;
-}
+
 
 .teleport_item {
    background-color: #fff;
@@ -495,32 +470,15 @@ input, textarea {
    text-decoration: none;
 }
 
-.teleport_item i {
-   position: absolute;
-   right: 10px;
-}
-
-#massage-heading-box, #hand-heading-box, #scrubs-heading-box, #waxing-heading-box {
-   align-self: end;
-}
-
-#massage_hero_img {
-   background: url(../images/massage_hero.jpg) no-repeat;
-   background-size: inherit;
-   height: 195px;
-}
-
 #massage-summary p, #hand-summary p {
    font-size: 14px;
    line-height: 22px;
    margin-bottom: 20px;
 }
 
-
 .price {
    padding: 10px 0;
 }
-
 
 .price-text, .price-text-price, .price-des {
    display: inline;
@@ -546,29 +504,11 @@ input, textarea {
    padding-left: 9px;
 }
 
-#hand_hero_img {
-   background: url(../images/hand-foot_hero.jpg) no-repeat;
-   background-size: inherit;
-   height: 195px;
-}
-
-
-#scrubs_hero_img {
-   background: url(../images/scrubs_hero.jpg) no-repeat;
-   background-size: inherit;
-   height: 195px;
-}
-
-
-
-
 .card {
    margin-top: 30px;
    background-color: #fff;
    padding-top: 12px;
    padding-bottom: 8px;
-   
-
 }
 
 
@@ -577,7 +517,6 @@ input, textarea {
    align-items: center;
    border-left: 2px solid #9a2018;
    padding-left: 9px;
-
 }
 
 .card_text_p-2 {
@@ -590,20 +529,6 @@ input, textarea {
 .card_text_p, .card_text_p-2 {
    margin: 8px;
 }
-
-
-
-#waxing_hero_img {
-   background-image: url(../images/waxing_hero.jpg);
-   background-repeat: no-repeat;
-   background-size: inherit;
-   height: 190px;;
-}
-
-#waxing-heading-box {
-   align-self: end;
-}
-
 .waxing_item {
    display: flex;
    height: 52px;
@@ -613,19 +538,8 @@ input, textarea {
    margin-top: 5px;
 }
 
-#algonquin_hero_img {
-   background-image: url(../images/algonquin_hero.jpg);
-   height: 190px;
-   background-repeat: no-repeat;
-   background-size: inherit;
-}
-
 #algonquin-summary p:nth-child(2) {
    margin-bottom: 25px;
-}
-
-#algonquin-heading-box {
-   align-self: end;
 }
 
 .other_heading {
@@ -634,37 +548,12 @@ input, textarea {
    margin-top: 20px;
 }
 
-#other_hero_img {
-   background-image: url(../images/other_hero.jpg);
-   height: 195px;
-   background-size: inherit;
-   background-repeat: no-repeat;
-}
-
-#other-heading-box {
-   align-self: end;
-}
-
-
-
 .other-cont p {
    margin-bottom: 5px;
 }
 
-
 .awards h3 {
    text-decoration: underline;
-}
-
-#awards_hero_img {
-   background-image: url(../images/awards_hero.jpg);
-   height: 190px;
-   background-size: inherit;
-   background-repeat: no-repeat;
-}
-
-#awards-heading-box {
-   align-self: end;
 }
 
 .policies-text {
@@ -678,5 +567,120 @@ input, textarea {
 .policies-text:first-child {
    border-top: 2px solid #CF6666;
    margin-top: 30px;
+}
+
+/* hero images */
+
+#awards_hero_img {
+   background-image: url(../images/awards_hero.jpg);
+   height: 190px;
+   background-size: inherit;
+   background-repeat: no-repeat;
+}
+
+#other_hero_img {
+   background-image: url(../images/other_hero.jpg);
+   height: 195px;
+   background-size: inherit;
+   background-repeat: no-repeat;
+}
+
+#algonquin_hero_img {
+   background-image: url(../images/algonquin_hero.jpg);
+   height: 190px;
+   background-repeat: no-repeat;
+   background-size: inherit;
+}
+
+#waxing_hero_img {
+   background-image: url(../images/waxing_hero.jpg);
+   background-repeat: no-repeat;
+   background-size: inherit;
+   height: 190px;;
+}
+
+#hand_hero_img {
+   background: url(../images/hand-foot_hero.jpg) no-repeat;
+   background-size: inherit;
+   height: 195px;
+}
+
+#scrubs_hero_img {
+   background: url(../images/scrubs_hero.jpg) no-repeat;
+   background-size: inherit;
+   height: 195px;
+}
+
+#massage_hero_img {
+   background: url(../images/massage_hero.jpg) no-repeat;
+   background-size: inherit;
+   height: 195px;
+}
+
+#spa_hero{
+   background-image: url(../images/spa_main_hero.jpg);
+   background-repeat: no-repeat;
+   background-size: inherit;
+   height: 195px;
+}
+
+
+
+
+/* dining page */
+
+
+/* hero images */
+
+#dining_hero_img {
+   background-image: url(../images/dining_hero.jpg);
+   background-repeat: no-repeat;
+   background-size: inherit;
+   height: 190px;
+}
+
+.dining_list {
+   margin-top: 5px;
+   padding-left: 15px;
+   font-size: 14px;
+}
+
+.dining_options {
+   font-size: 14px;
+   padding: 0px 20px;
+   background-color: #fff;
+   margin-bottom: 20px;
+}
+
+#menu {
+   background-color: #9a2018;
+   height: 358px;
+   padding-left: 0px;
+   padding-right: 0px;
+}
+
+#menu p::before {
+   content: '\25C1';
+   position: relative;
+   left: -100px;
+}
+
+#menu p::after {
+   content: '\25BA';
+   position: relative;
+   left: 100px;
+}
+
+.menu_box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 67px;
+   color: #fff;
+   align-self: end;
+}
+
+.menu_img {
+   width: 382px;
 }
 
