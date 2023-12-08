@@ -367,6 +367,8 @@ input, textarea {
 #contact-hero-con {
    background: url(../images/contact-hero.jpg);
    height: 195px;
+   background-repeat: no-repeat;
+   background-size: inherit;
 }
 
 #contact-hero-heading-box {
@@ -519,10 +521,6 @@ input, textarea {
    padding: 10px 0;
 }
 
-.price:nth-child(even) {
-   background-color: #EDEDED;
-}
-
 
 .price-text, .price-text-price, .price-des {
    display: inline;
@@ -573,10 +571,6 @@ input, textarea {
 
 }
 
-.card_text_p {
-   display: inline;
-   
-}
 
 .card_text_p{
    display: flex;
@@ -597,11 +591,6 @@ input, textarea {
    margin: 8px;
 }
 
-
-
-.card-text {
-   padding: 0;
-}
 
 
 #waxing_hero_img {
@@ -661,3 +650,33 @@ input, textarea {
 .other-cont p {
    margin-bottom: 5px;
 }
+
+
+.awards h3 {
+   text-decoration: underline;
+}
+
+#awards_hero_img {
+   background-image: url(../images/awards_hero.jpg);
+   height: 190px;
+   background-size: inherit;
+   background-repeat: no-repeat;
+}
+
+#awards-heading-box {
+   align-self: end;
+}
+
+.policies-text {
+   padding: 20px 0px;
+   border-bottom: 2px solid #CF6666;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 1.4;
+}
+
+.policies-text:first-child {
+   border-top: 2px solid #CF6666;
+   margin-top: 30px;
+}
+
