@@ -160,7 +160,6 @@ input, textarea {
 }
 
 .line-separator {
-   margin-top: 20px;
    border-top: solid 3px #CF6666;
    padding-top: 20px;
 }
@@ -289,7 +288,7 @@ input, textarea {
    padding-bottom: 60px;
 }
 
-#about-us-text p, .other-cont p, #algonquin-summary p, #contact-hero-address p {
+#about-us-text p, .other-cont p, #algonquin-summary p, #contact-hero-address p, #wine_summary p {
    font-size: 14px;
    margin-bottom: 20px;
    line-height: 22px;
@@ -470,7 +469,7 @@ input, textarea {
    text-decoration: none;
 }
 
-#massage-summary p, #hand-summary p {
+#massage-summary p, #hand-summary p, #chefs-summary p {
    font-size: 14px;
    line-height: 22px;
    margin-bottom: 20px;
@@ -659,28 +658,22 @@ input, textarea {
    padding-right: 0px;
 }
 
-#menu p::before {
-   content: '\25C1';
-   position: relative;
-   left: -100px;
-}
-
-#menu p::after {
-   content: '\25BA';
-   position: relative;
-   left: 100px;
-}
-
 .menu_box {
    display: flex;
    align-items: center;
-   justify-content: center;
+   justify-content: space-around;
    height: 67px;
    color: #fff;
    align-self: end;
+
 }
 
 .menu_img {
    width: 382px;
 }
+
+#wine_summary img {
+   margin-top: 50px;
+}
+
 
