@@ -140,8 +140,9 @@ input, textarea {
    cursor: pointer;
 }
 
-.book-now:hover {
+.book-now:active {
    background-color: rgb(196, 28, 28);
+   animation: button .6s ease-in-out;
 }
 
 #book-now-hero {
@@ -350,13 +351,21 @@ input, textarea {
 #contact-hero-con {
    background: url(../images/contact-hero.jpg);
    height: 195px;
-   background-repeat: no-repeat;
-   background-size: inherit;
+}
+
+#contact-hero-heading-box {
+   align-self: end;
 }
 
 #contact-hero-text {
    margin-top: 15px;
    margin-bottom: 25px;
+}
+
+#contact-hero-address p {
+   margin-bottom: 20px;
+   font-size: 14px;
+   line-height: 22px;
 }
 
 #contact-hero-address {
@@ -367,42 +376,51 @@ input, textarea {
    margin-bottom: 25px;
 }
 
-
-
-#contact-hero-form form {
+#contact-form form {
    display: flex;
    flex-direction: column;
 }
 
-#contact-hero-form input, textarea {
-   padding: 22px;
-   border: 2px solid #d6d6d6;
-   background-color: #f7f7f7;
+#contact-form input, textarea {
+   padding: 18px;
+   border: 1px solid #d6d6d6;
+   background-color: #fff;
    border-radius: 5px;
-   margin-bottom: 30px;
+   margin-bottom: 10px;
    font: inherit;
    width: auto;
 }
 
-#contact-hero-form textarea {
-   height: 250px;
+#contact-form textarea {
+   height: 290px;
 }
 
-#contact-hero-form input[type="submit"] {
+#contact-form input[type="submit"] {
    padding: 12px 28px;
    background: #9a2018;
    color: #fff;
    border: none;
-   transition: all 200ms ease-in;
-   width: 150px;
+   transition: all 200ms ease-out;
+   width: 176px;
    align-self: flex-end;
+   cursor: pointer;
 }
 
-#contact-hero-form input[type="submit"]:hover {
-   background-color: #626262;
-   border-radius: 0;
+#contact-form input[type="submit"]:active {
+   background-color: #CF6666;
+   animation: button .6s ease-in-out;
 }
 
+@keyframes button {
+   50% {
+      opacity: .5;
+      scale: .9;
+   }
+
+   100% {
+      scale: 1;
+   }
+}
 
 /* 8. ---Footer--- */
 
@@ -437,7 +455,13 @@ input, textarea {
 
 /* spa activities */
 
+#massage-summary p, #hand-summary p, #chefs-summary p {
+   font-size: 14px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
 
+/* 1. Page nav block */
 
 .teleport_item {
    background-color: #fff;
@@ -447,7 +471,6 @@ input, textarea {
    margin-bottom: 10px;
    display: flex;
    align-items: center;
-   position: relative;
    background-position: 140px 20px;
    background-repeat: no-repeat;
    background-size: 25px;
@@ -463,14 +486,19 @@ input, textarea {
    margin-left: 15px;
 }
 
-.waxing_item .text {
-   text-decoration: none;
+/* 2. Waxing */
+
+.waxing_item {
+   display: flex;
+   height: 52px;
+   background-color: white;
+   align-items: center;
+   margin-bottom: 11px;
+   margin-top: 5px;
 }
 
-#massage-summary p, #hand-summary p, #chefs-summary p {
-   font-size: 14px;
-   line-height: 22px;
-   margin-bottom: 20px;
+.waxing_item .text {
+   text-decoration: none;
 }
 
 .price {
@@ -526,18 +554,14 @@ input, textarea {
 .card_text_p, .card_text_p-2 {
    margin: 8px;
 }
-.waxing_item {
-   display: flex;
-   height: 52px;
-   background-color: white;
-   align-items: center;
-   margin-bottom: 11px;
-   margin-top: 5px;
-}
+
+/* 3. Algonquin */
 
 #algonquin-summary p:nth-child(2) {
    margin-bottom: 25px;
 }
+
+/* 4. Other treatments */
 
 .other_heading {
    font-size: 16px;
@@ -549,9 +573,13 @@ input, textarea {
    margin-bottom: 5px;
 }
 
+/* 5. Awards */
+
 .awards h3 {
    text-decoration: underline;
 }
+
+/* 6. Policies */
 
 .policies-text {
    padding: 20px 0px;
@@ -636,6 +664,8 @@ input, textarea {
    height: 190px;
 }
 
+/* 1. Block 1 */
+
 .dining_list {
    margin-top: 5px;
    padding-left: 15px;
@@ -648,6 +678,8 @@ input, textarea {
    background-color: #fff;
    margin-bottom: 20px;
 }
+
+/* 2. Menu block */
 
 #menu {
    background-color: #9a2018;
@@ -670,45 +702,14 @@ input, textarea {
    width: 382px;
 }
 
+/* 3. Wine award */
+
 #wine_summary img {
    margin-top: 50px;
 }
 
-#contact-form form {
-   display: flex;
-   flex-direction: column;
-}
 
-#contact-form input, textarea {
-   padding: 18px;
-   border: 1px solid #d6d6d6;
-   background-color: #fff;
-   border-radius: 5px;
-   margin-bottom: 10px;
-   font: inherit;
-   width: auto;
-}
-
-#contact-form textarea {
-   height: 290px;
-}
-
-#contact-form input[type="submit"] {
-   padding: 12px 28px;
-   background: #9a2018;
-   color: #fff;
-   border: none;
-   transition: all 200ms ease-out;
-   width: 176px;
-   align-self: flex-end;
-}
-
-#contact-form input[type="submit"]:active {
-   background-color: #CF6666;
-   cursor: pointer;
-   opacity: 0.7;
-
-}
+/* Checkbox after pseudo */
 
 .terms-checkbox {
    display: none;
@@ -723,7 +724,7 @@ input, textarea {
    border-radius: 50%;
 }
 
-.terms-display::before {
+.terms-display::after {
    content: '';
    position: absolute;  
    top: 50%;
@@ -735,11 +736,22 @@ input, textarea {
    background-color: #9a2018;
    border-radius: 50%;
    opacity: 0;
-   transition: .2s;
+
 }
 
-.terms-checkbox:checked + .terms-display::before {
+.terms-checkbox:checked + .terms-display::after {
    opacity: 1;
+   animation: dot .1s ease-out;
+}
+
+@keyframes dot {
+   0% {
+      scale: 0;
+   }
+
+   100% {
+      scale: 1;
+   }
 }
 
 .terms-label {
